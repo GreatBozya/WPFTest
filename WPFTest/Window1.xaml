@@ -1,0 +1,24 @@
+﻿<Window x:Class="WPFTest.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFTest"
+        mc:Ignorable="d"
+        Title="Православный тест" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://kotsport.ru/wp-content/uploads/2024/01/iisus-khristos-kulturist-3.webp" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Button Name="Next" VerticalAlignment="Bottom" HorizontalAlignment="Right" FontSize="18" Content="Продолжить" Height="50" Width="120" Click="Next_Click"/>
+        <Viewbox Height="400">
+            <StackPanel>
+                <TextBlock Text="Кто такой славянин?"/>
+                <RadioButton Name="a1" Content="Ящер" Checked="a1_Checked" Width="105"/>
+                <RadioButton Name="a2" Content="Америкос" Checked="a2_Checked" Width="105"/>
+                <RadioButton Name="a3" Content="Раб Божий" Checked="a3_Checked" Width="105"/>
+                <RadioButton Name="a4" Content="Чёёёёё???" Checked="a4_Checked" Width="105"/>
+            </StackPanel>
+        </Viewbox>
+    </Grid>
+</Window>
